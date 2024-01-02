@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Item</title>
+</head>
+<body>
+    <form action="" method="POST">
+        <input type="text" name="item" placeholder="Enter The Name Of The Item:"><br><br>
+        <textarea name="description"></textarea><br><br>
+        <input type="text" name="url" placeholder="Enter URL of image:"><br><br>
+        <input type="number" name="price" placeholder="Enter The Price Of The Item (In Rupees):"> per&nbsp;
+        <select name="unit">
+            <option value="number">Definite Quantity (Number)</option>
+            <option value="kg">Kilograms</option>
+            <option value="g">Grams</option>
+            <option value="l">Litres</option>
+            <option value="ml">Millilitres</option>
+        </select><br>
+        <input type="submit"><br><br>
+        <% if (error) { %>
+            <p><%= error %></p>
+        <% } %>
+    </form>
+</body>
+</html>
